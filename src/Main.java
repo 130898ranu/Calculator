@@ -1,17 +1,24 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        public class JavaProgram
+        {
+            public static void main(String args[])
+            {
+                int first, second, add, subtract, multiply;
+                float devide;
+                Scanner scanner = new Scanner(System.in);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+                System.out.print("Enter Two Numbers : ");
+                first = scanner.nextInt();
+                second = scanner.nextInt();
+
+                add = first + second;
+                subtract = first - second;
+                multiply = first * second;
+                devide = (float) first / second;
+
+                System.out.println("Sum = " + add);
+                System.out.println("Difference = " + subtract);
+                System.out.println("Multiplication = " + multiply);
+                System.out.println("Division = " + devide);
+            }
         }
-    }
-}
